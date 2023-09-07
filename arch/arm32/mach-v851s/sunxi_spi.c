@@ -588,6 +588,7 @@ static int spi_nand_info(sunxi_spi_t *spi)
 	return -1;
 }
 
+#if 0
 static int spi_nand_reset(sunxi_spi_t *spi)
 {
 	uint8_t tx[1];
@@ -602,6 +603,7 @@ static int spi_nand_reset(sunxi_spi_t *spi)
 
 	return 0;
 }
+#endif
 
 static int spi_nand_get_config(sunxi_spi_t *spi, uint8_t addr, uint8_t *val)
 {

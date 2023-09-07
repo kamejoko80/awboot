@@ -1,9 +1,9 @@
 # Target
 TARGET := awboot
-CROSS_COMPILE ?= arm-none-eabi
+CROSS_COMPILE ?= arm_toolchains/xpack-arm-none-eabi-gcc-12.2.1-1.2/bin/arm-none-eabi
 
 # Log level defaults to info
-LOG_LEVEL ?= 30
+LOG_LEVEL ?= 40
 
 SRCS := main.c board-v851s.c lib/debug.c lib/xformat.c lib/fdt.c lib/string.c
 

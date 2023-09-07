@@ -49,6 +49,7 @@ void abort(void)
 		;
 }
 
+#if 0
 static void sid_read_ldoB_cal(dram_para_t *para)
 {
 	uint32_t reg;
@@ -72,7 +73,9 @@ static void sid_read_ldoB_cal(dram_para_t *para)
 
 	clrsetbits_le32((SYS_CONTROL_REG_BASE + LDO_CTAL_REG), 0xff00, reg << 8);
 }
+#endif
 
+#if 0
 static void dram_voltage_set(dram_para_t *para)
 {
 	int vol;
@@ -95,6 +98,7 @@ static void dram_voltage_set(dram_para_t *para)
 
 	sid_read_ldoB_cal(para);
 }
+#endif
 
 static void dram_enable_all_master(void)
 {
@@ -653,6 +657,7 @@ static void mctl_com_init(dram_para_t *para)
 	}
 }
 
+#if 0
 static const uint8_t ac_remapping_tables[][22] = {
 	[0] = {  0	},
  /* FPGA Verify DDR REMAP */
@@ -676,7 +681,9 @@ static const uint8_t ac_remapping_tables[][22] = {
 	[9] = { 0x1,	 0x2, 0xD, 0x8, 0xF, 0xC, 0x13,  0xA,   0x3, 0x15,  0x6,
 		   0x11, 0x9,  0xE, 0x5, 0x10, 0x14, 0x16,  0xB,  0x7,	0x4,  0x12}, // DDR2 H133
 };
+#endif
 
+#if 0
 /*
  * This routine chooses one of several remapping tables for 22 lines.
  * It is unclear which lines are being remapped. It seems to pick
@@ -752,6 +759,7 @@ static void mctl_phy_ac_remapping(dram_para_t *para)
 	val = (cfg[4] << 25) | (cfg[3] << 20) | (cfg[2] << 15) | (cfg[1] << 10) | (cfg[0] << 5) | 1;
 	writel(val, (MCTL_COM_BASE + MCTL_COM_REMAP0));
 }
+#endif
 
 // Init the controller channel. The key part is placing commands in the main
 // command register (PIR, 0x3103000) and checking command status (PGSR0, 0x3103010).
