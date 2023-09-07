@@ -17,8 +17,8 @@
 
 // #define CONFIG_ENABLE_CPU_FREQ_DUMP
 
-#define CONFIG_KERNEL_FILENAME "zImage"
-#define CONFIG_DTB_FILENAME	   "sun8i-t113-mangopi-dual.dtb"
+#define CONFIG_KERNEL_FILENAME "sun8i-v851s-zImage"
+#define CONFIG_DTB_FILENAME	   "sun8i-v851s.dtb"
 
 #define CONFIG_KERNEL_LOAD_ADDR (SDRAM_BASE + (72 * 1024 * 1024))
 #define CONFIG_DTB_LOAD_ADDR	(SDRAM_BASE + (64 * 1024 * 1024))
