@@ -6,13 +6,21 @@
 #include "sunxi_spi.h"
 #include "sdmmc.h"
 
-
+#if 0
 sunxi_usart_t usart_dbg = {
 	.base	 = 0x02500800,
 	.id		 = 2,
 	.gpio_tx = {GPIO_PIN(PORTE, 12), GPIO_PERIPH_MUX6},
 	.gpio_rx = {GPIO_PIN(PORTE, 13), GPIO_PERIPH_MUX6},
 };
+#else
+sunxi_usart_t usart_dbg = {
+	.base	 = 0x02500000,
+	.id		 = 0,
+	.gpio_tx = {GPIO_PIN(PORTH, 9),  GPIO_PERIPH_MUX5},
+	.gpio_rx = {GPIO_PIN(PORTH, 10), GPIO_PERIPH_MUX5},
+};  
+#endif
 
 sunxi_spi_t sunxi_spi0 = {
 	.base	   = 0x04025000,

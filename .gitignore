@@ -10,3 +10,6 @@ build/*
 tools/mksunxi
 
 *boot.img
+
+.vscode/dryrun.log
+

@@ -1,5 +1,5 @@
 ARCH := arch
-SOC:=$(ARCH)/arm32/mach-t113s3
+SOC:=$(ARCH)/arm32/mach-v851s
 
 INCLUDE_DIRS += -I $(ARCH)/arm32/include -I $(SOC)/include -I $(SOC) -I $(SOC)/mmc
 
