@@ -6,7 +6,7 @@
 #include "sunxi_spi.h"
 #include "sdmmc.h"
 
-#if 0
+#if 1
 sunxi_usart_t usart_dbg = {
 	.base	 = 0x02500800,
 	.id		 = 2,
