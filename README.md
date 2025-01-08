@@ -51,3 +51,5 @@ sudo dd if=awboot-boot-sd.bin of=/dev/(your sd device) bs=1024 seek=8
 
 ### Linux kernel:
 WIP kernel from here: https://github.com/smaeul/linux/tree/d1/all
+Check out linux build guideline here: https://github.com/kamejoko80/allwinner_embdev_guideline/blob/main/V851s_Bootloader.md
+
