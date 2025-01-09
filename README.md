@@ -53,6 +53,12 @@ sudo dd if=awboot-boot-sd.bin of=/dev/(your sd device) bs=1024 seek=8
 - compile (if needed) and copy your `.dtb` file to the FAT partition.
 - copy zImage to the FAT partition.
 
+### Uart Console Connection:
+
+- PE12 (TXD)
+- PE13 (RXD)
+- Baud 115200
+
 ### Linux kernel:
 WIP kernel from here: https://github.com/smaeul/linux/tree/d1/all
 
