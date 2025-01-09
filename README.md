@@ -8,6 +8,10 @@ Run `make LOG_LEVEL=40`.
 This will generate the bootloader with a valid EGON header, usable with the xfel tool or BOOTROM  
 You can change the log level with the LOG_LEVEL argument. Default is 30 (info).  
 
+## Windows driver
+
+Run zadig-2.9.exe (in tools folder) following zadig_config.png configuration. 
+
 ## Using
 
 You will need [xfel](https://github.com/xboot/xfel) for uploading the file to memory or SPI flash.  
